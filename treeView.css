@@ -1,0 +1,67 @@
+/* IMPORT CAIRO FONT FROM GOOGLE */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+/* SET FONT FAMILY */
+body {
+    font-family: "Cairo", sans-serif;
+}
+
+.hasChildren {
+    position: relative;
+    margin-right: 20px;
+}
+
+.hasChildren::before {
+    content: "";
+    position: absolute;
+    right: -5px;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #ccc;
+}
+
+
+.childrenHidden {
+    display: none;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.title .yearsInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.title .yearsInfo .year {
+    width: 100px;
+}
+
+.title.isActive {
+    background-color: #514c47;
+    color: white;
+}
+
+.title:hover {
+    background-color: #eee;
+}
+
+.title.isActive:hover {
+    background-color: #514c47;
+    color: white;
+}
+
+title.open {
+    background-color: #ccc;
+}
